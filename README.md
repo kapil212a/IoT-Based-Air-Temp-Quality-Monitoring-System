@@ -1,54 +1,66 @@
-# IoT Air Quality Monitoring System
+# IoT-Based Air Quality Monitoring System with Real-Time Web Dashboard
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/925d8a0d-f581-41fa-a7da-6032ba56c6bf" />
+
 
 Stimulation Access Link :- https://wokwi.com/projects/472976271816115201
+Presentation PPT Link :- https://docs.google.com/presentation/d/1CxxoGmHysMZz8GWxRckmiLMYroXpbxYA/edit?usp=drive_link&ouid=100996874504024036206&rtpof=true&sd=true
 
-## Overview
-An IoT-based air quality monitoring system built using ESP32. The project reads temperature and humidity using a DHT11 sensor and monitors an analog air-quality sensor (MQ-135). Readings are displayed on an OLED screen and can be uploaded to ThingSpeak using Wi-Fi.
 
-## Components Used
+## Project Overview
+The IoT-Based Air Quality Monitoring System is designed to monitor environmental conditions using an ESP32 microcontroller, DHT11 temperature and humidity sensor, and MQ-135 gas sensor. Sensor readings will be displayed on an OLED screen and transmitted over Wi-Fi to a cloud platform.
+
+After completing the hardware implementation and testing, the project will be extended with a web-based monitoring dashboard to visualize real-time sensor readings, track historical data, and provide an easy-to-understand overview of environmental conditions.
+
+## Key Features
+- Real-time temperature and humidity monitoring
+- Air-quality sensor readings using the MQ-135
+- Live data display on an OLED screen
+- Wi-Fi connectivity using a mobile hotspot or wireless network
+- Cloud data storage and visualization using ThingSpeak
+- Planned web dashboard for real-time data visualization
+- Planned historical graphs and sensor trends
+- Planned visual alerts when readings exceed configured thresholds
+
+## Hardware Components
 - ESP32 development board
 - DHT11 temperature and humidity sensor
 - MQ-135 gas sensor module
-- I2C OLED display (SSD1306)
+- SSD1306 I2C OLED display
 - Breadboard and jumper wires
-- USB cable and mobile hotspot/Wi-Fi connection
-
-## Features
-- Real-time temperature monitoring
-- Humidity monitoring
-- Analog MQ-135 sensor readings
-- Live readings on the OLED display
-- Cloud data logging using ThingSpeak
-- Wi-Fi connectivity
+- USB power and Wi-Fi connectivity
 
 ## Software and Technologies
-- Arduino IDE
-- Embedded C++ / Arduino framework
+- Arduino IDE and embedded C++
 - ESP32
-- ThingSpeak IoT platform
+- ThingSpeak IoT cloud platform
+- HTML, CSS, and JavaScript for the planned web dashboard
+- Web APIs for retrieving sensor data
 
-## Circuit Connections
-Add your final wiring diagram and photos in this section.
+## System Workflow
+1. The sensors collect temperature, humidity, and gas-sensor readings.
+2. The ESP32 processes the sensor readings.
+3. The OLED displays the readings locally.
+4. The ESP32 sends data over Wi-Fi to ThingSpeak.
+5. The planned website retrieves the available data and displays it through charts, status indicators, and historical trends.
 
-## How to Run
-1. Install Arduino IDE.
-2. Install the ESP32 board package.
-3. Install the required DHT and Adafruit OLED libraries.
-4. Connect the sensors and OLED according to the circuit diagram.
-5. Enter your own Wi-Fi credentials and ThingSpeak Write API Key locally.
-6. Select your ESP32 board and port.
-7. Upload the code and open Serial Monitor at 115200 baud.
+## Future Enhancements
+- Responsive dashboard for desktop and mobile devices
+- Real-time data refresh and interactive charts
+- Historical data analysis
+- Configurable threshold alerts
+- Improved sensor calibration and more meaningful air-quality estimates
 
-## Results
-Add photos of the working hardware, OLED output, Serial Monitor, and ThingSpeak graphs after testing.
+## Project Status
+**Phase 1:** Hardware setup, sensor integration, and OLED display.
 
-## Future Improvements
-- Calibrate the MQ-135 sensor for more meaningful measurements.
-- Add alerts for high sensor readings.
-- Build a web dashboard for monitoring historical data.
+**Phase 2:** Wi-Fi connectivity and ThingSpeak cloud integration.
+
+**Phase 3:** Web dashboard development for real-time monitoring.
+
+## Important Note
+The MQ-135 provides sensor readings that require calibration and interpretation. Raw readings alone do not represent a certified Air Quality Index (AQI).
 
 ## Author
 Kapil Kumar Gupta
-
 ## Note
 MQ-135 raw readings are not equivalent to a certified AQI measurement. Accurate gas concentration estimates require appropriate calibration and validation.

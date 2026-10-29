@@ -63,5 +63,7 @@ The MQ-135 provides sensor readings that require calibration and interpretation.
 
 ## Author
 Kapil Kumar Gupta
+Rohit Kumar Yadav
+Abhishek Pal
 ## Note
 MQ-135 raw readings are not equivalent to a certified AQI measurement. Accurate gas concentration estimates require appropriate calibration and validation.

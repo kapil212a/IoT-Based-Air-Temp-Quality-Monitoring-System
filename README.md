@@ -1,5 +1,5 @@
 # IoT-Based Air Quality Monitoring System with Real-Time Web Dashboard
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/925d8a0d-f581-41fa-a7da-6032ba56c6bf" />
+<img width="1536" height="850" alt="image" src="https://github.com/user-attachments/assets/925d8a0d-f581-41fa-a7da-6032ba56c6bf" />
 
 
 Stimulation Access Link :- https://wokwi.com/projects/472976271816115201

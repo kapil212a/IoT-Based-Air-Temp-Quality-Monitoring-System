@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IoT Air Quality Monitoring</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- HEADER -->
+        <header>
+            <h1>ONLINE DASHBOARD (THINGSPEAK)</h1>
+        </header>
+
+
+        <!-- GRAPHS -->
+        <section class="graphs">
+
+            <!-- Temperature -->
+            <div class="graph-card">
+                <h2>Temperature (°C)</h2>
+
+                <canvas id="temperatureChart"></canvas>
+
+                <p>Time</p>
+            </div>
+
+
+            <!-- Humidity -->
+            <div class="graph-card">
+                <h2>Humidity (%)</h2>
+
+                <canvas id="humidityChart"></canvas>
+
+                <p>Time</p>
+            </div>
+
+
+            <!-- Air Quality -->
+            <div class="graph-card">
+                <h2>Air Quality (Value)</h2>
+
+                <canvas id="airQualityChart"></canvas>
+
+                <p>Time</p>
+            </div>
+
+        </section>
+
+
+        <!-- CURRENT READINGS -->
+        <section class="readings">
+
+            <div class="section-title">
+                Current Readings
+            </div>
+
+
+            <div class="reading-container">
+
+                <!-- Temperature -->
+                <div class="reading-card">
+
+                    <div class="icon temperature-icon">
+                        🌡️
+                    </div>
+
+                    <div>
+                        <h3>Temperature</h3>
+
+                        <strong id="temperature">
+                            29.6 °C
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <!-- Humidity -->
+                <div class="reading-card">
+
+                    <div class="icon">
+                        💧
+                    </div>
+
+                    <div>
+                        <h3>Humidity</h3>
+
+                        <strong id="humidity">
+                            54.0 %
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <!-- Air Quality -->
+                <div class="reading-card">
+
+                    <div class="icon">
+                        ☁️
+                    </div>
+
+                    <div>
+                        <h3>Air Quality Value</h3>
+
+                        <strong id="airQuality">
+                            812
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <!-- Status -->
+                <div class="reading-card">
+
+                    <div>
+                        <h3>Air Quality Status</h3>
+
+                        <strong id="status" class="good">
+                            GOOD
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- LAST UPDATED -->
+            <div class="updated">
+
+                Last updated:
+
+                <span id="lastUpdated">
+                    08:45:30
+                </span>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Our JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

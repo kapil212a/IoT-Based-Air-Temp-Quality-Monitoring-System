@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f4f6f8;
+
+    color: #111;
+}
+
+
+.dashboard {
+    width: 100%;
+    max-width: 1500px;
+
+    margin: auto;
+
+    padding: 10px;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: #10294a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 12px;
+
+    border-radius: 7px;
+
+    margin-bottom: 8px;
+}
+
+header h1 {
+    font-size: 24px;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* ================= GRAPHS ================= */
+
+.graphs {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 8px;
+}
+
+
+.graph-card {
+
+    background: white;
+
+    border: 1px solid #cbd3dc;
+
+    border-radius: 7px;
+
+    padding: 8px;
+
+    text-align: center;
+
+    height: 190px;
+}
+
+
+.graph-card h2 {
+
+    font-size: 15px;
+
+    margin-bottom: 4px;
+}
+
+
+.graph-card canvas {
+
+    width: 100% !important;
+
+    height: 125px !important;
+}
+
+
+.graph-card p {
+
+    color: #0050a4;
+
+    font-size: 12px;
+
+    margin-top: 2px;
+}
+
+
+/* ================= CURRENT READINGS ================= */
+
+.readings {
+
+    margin-top: 8px;
+
+    background: white;
+
+    border: 1px solid #cbd3dc;
+
+    border-radius: 7px;
+
+    overflow: hidden;
+}
+
+
+.section-title {
+
+    background: #12457d;
+
+    color: white;
+
+    padding: 6px 10px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+.reading-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 8px;
+
+    padding: 10px;
+}
+
+
+.reading-card {
+
+    min-height: 85px;
+
+    border: 1px solid #cbd3dc;
+
+    border-radius: 7px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 10px;
+
+    background: #fafafa;
+}
+
+
+.reading-card h3 {
+
+    font-size: 14px;
+
+    font-weight: normal;
+
+    margin-bottom: 7px;
+}
+
+
+.reading-card strong {
+
+    font-size: 21px;
+
+    color: #07529c;
+}
+
+
+/* ================= ICON ================= */
+
+.icon {
+
+    font-size: 40px;
+}
+
+
+/* ================= STATUS ================= */
+
+.good {
+
+    color: #218838 !important;
+}
+
+
+.moderate {
+
+    color: #f39c12 !important;
+}
+
+
+.poor {
+
+    color: #e1261c !important;
+}
+
+
+/* ================= UPDATED ================= */
+
+.updated {
+
+    text-align: center;
+
+    padding: 5px;
+
+    font-size: 14px;
+
+    color: #222;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    .graphs {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .reading-container {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    header h1 {
+
+        font-size: 18px;
+
+    }
+
+    .reading-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
